@@ -1,5 +1,5 @@
 import { dbConnect } from "@/lib/mongodb";
-import Subscriber from "@/models/Subscriber";
+import Subscriber from "@/model/Subscriber";
 
 export async function POST(request) {
   try {
