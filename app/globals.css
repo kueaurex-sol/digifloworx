@@ -1,13 +1,13 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
-  /* --background: #ffffff; */
     --background: #0a0a0a;
-  /* --foreground: #171717; */
     --foreground: #ededed;
 
 }
-
+@theme {
+  --font-sans: var(--font-sans);
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -18,7 +18,6 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-  /* --background: #ffffff; */
     --foreground: #ededed;
 
   }
@@ -29,6 +28,56 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-text {
+  background-size: 200% auto;
+  animation: gradient-move 4s ease-in-out infinite;
+}
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+.animate-accordion-down {
+  animation: accordion-down 0.2s ease-out;
+}
+.animate-accordion-up {
+  animation: accordion-up 0.2s ease-out;
+} */
+ @import "tailwindcss";
+
+:root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
 @keyframes gradient-move {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
