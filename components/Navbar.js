@@ -6,17 +6,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import NavLink from "./NavLink";
 
 const LEFT_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  // { label: "Our Clients", href: "#our-clients" },
+  { label: "About", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Process", href: "/#process" },
+  // { label: "Our Clients", href: "/#our-clients" },
 ];
 
 const RIGHT_LINKS = [
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Faq", href: "#faq" },
-  // { label: "Pricing", href: "#pricing" },
-  { label: "Contact Us", href: "#contact-us" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Faq", href: "/#faq" },
+  // { label: "Pricing", href: "/#pricing" },
+  { label: "Contact Us", href: "/#contact-us" },
 ];
 
 const EASE = [0.22, 1, 0.36, 1];
